@@ -1,10 +1,21 @@
 import type { NextPage } from 'next';
+import Typewriter from 'typewriter-effect';
 
 const Home: NextPage = () => {
   return (
     <main className='max-w-2xl px-6 mx-auto mt-8 mb-64 space-y-12'>
       <section className='space-y-6'>
-        <h1 className='text-3xl font-bold'>Hello, I&apos;m Ivan Olmo.</h1>
+        <h1 className='text-3xl font-bold'>
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString('Hey there! ')
+                .pauseFor(750)
+                .typeString("I'm Ivan Olmo.")
+                .start();
+            }}
+          />
+        </h1>
         <p className='text-xl'>
           I&apos;m a self taught software engineer experienced in full-stack web
           development. I have a passion for building web applications that are
