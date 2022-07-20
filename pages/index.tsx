@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Typewriter from 'typewriter-effect';
+import SkillsItem from '../components/SkillsItem';
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +27,23 @@ const Home: NextPage = () => {
           web apps with React, Next.js, and Firebase or MongoDB. I love to learn
           and am currently on a deep dive into TypeScript.
         </p>
+      </section>
+      <section className='space-y-6'>
+        <h2 className='text-2xl font-bold'>Skills</h2>
+        <div className='grid grid-cols-3 sm:grid-cols-4 gap-y-6'>
+          <SkillsItem label='React' icon='react.svg' />
+          <SkillsItem label='Next.js' icon='nextjs.svg' />
+          <SkillsItem label='JavaScript' icon='javascript.svg' />
+          <SkillsItem label='TypeScript' icon='typescript.svg' />
+          <SkillsItem label='MongoDB' icon='mongodb.svg' />
+          <SkillsItem label='Github' icon='github.svg' />
+          <SkillsItem label='Firebase' icon='firebase.svg' />
+          <SkillsItem label='Figma' icon='figma.svg' />
+          <SkillsItem label='Node.js' icon='nodejs.svg' />
+          <SkillsItem label='VSCode' icon='vscode.svg' />
+          <SkillsItem label='Markdown' icon='markdown.svg' />
+          <SkillsItem label='Tailwind' icon='tailwind.svg' />
+        </div>
       </section>
     </main>
   );
