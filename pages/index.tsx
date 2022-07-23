@@ -75,6 +75,27 @@ const Home: NextPage = () => {
           />
         </div>
       </section>
+      <section className='space-y-6 sm:space-y-10'>
+        <h2>Contact</h2>
+        <p>
+          If you&apos;d like to get in touch to discuss a project or opportunity
+          you have avaialble, please feel free to reach out to me via{' '}
+          <a
+            href=''
+            className='text-xl font-bold border-b-2 border-blue-600 hover:text-slate-500'
+          >
+            email
+          </a>{' '}
+          or{' '}
+          <a
+            href='https://linkedin.com/in/ivan-olmo'
+            className='text-xl font-bold border-b-2 border-blue-600 hover:text-slate-500'
+          >
+            LinkedIn
+          </a>
+          .
+        </p>
+      </section>
     </main>
   );
 };
