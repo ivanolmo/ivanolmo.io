@@ -8,8 +8,8 @@ interface ComponentProps {
 
 function SkillsItem(props: ComponentProps) {
   return (
-    <div className={`flex flex-col items-center ${props.className}`}>
-      <div className='w-12 h-12 sm:w-20 sm:h-20'>
+    <div className={`flex flex-col items-center gap-2 ${props.className}`}>
+      <div className='w-16 h-16 sm:w-24 sm:h-24'>
         <Image
           src={`/static/icons/${props.icon}`}
           alt={props.label}
