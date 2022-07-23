@@ -11,9 +11,9 @@ function ProjectItem(props: {
   link: string;
 }) {
   return (
-    <div className='py-4 pl-4 space-y-6 border-l-2 border-slate-800 dark:border-slate-200 rounded-xl'>
+    <div className='py-4 pl-4 space-y-6 border-l-2 sm:pl-8 border-slate-800 dark:border-slate-200 rounded-l-2xl'>
       <h3>{props.title}</h3>
-      <div className='w-auto h-auto'>
+      <div className='w-auto h-auto overflow-hidden rounded-xl'>
         <Image
           src={`/static/images/${props.image}`}
           alt={props.title}
