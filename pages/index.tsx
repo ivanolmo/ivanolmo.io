@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <p>
           I&apos;m currently focused on building fast, responsive, full-stack
           web apps with React, Next.js, and Firebase or MongoDB. I love to learn
-          and am currently on a deep dive into TypeScript.
+          and am currently on a deep dive into TypeScript and Jamstack.
         </p>
       </section>
       <section className='space-y-6 sm:space-y-10'>
@@ -36,14 +36,14 @@ const Home: NextPage = () => {
           <SkillsItem label='Next.js' icon='nextjs.svg' />
           <SkillsItem label='JavaScript' icon='javascript.svg' />
           <SkillsItem label='TypeScript' icon='typescript.svg' />
-          <SkillsItem label='MongoDB' icon='mongodb.svg' />
-          <SkillsItem label='Github' icon='github.svg' />
-          <SkillsItem label='Firebase' icon='firebase.svg' />
-          <SkillsItem label='Figma' icon='figma.svg' />
           <SkillsItem label='Node.js' icon='nodejs.svg' />
-          <SkillsItem label='VSCode' icon='vscode.svg' />
-          <SkillsItem label='Markdown' icon='markdown.svg' />
+          <SkillsItem label='Firebase' icon='firebase.svg' />
+          <SkillsItem label='MongoDB' icon='mongodb.svg' />
           <SkillsItem label='Tailwind' icon='tailwind.svg' />
+          <SkillsItem label='VSCode' icon='vscode.svg' />
+          <SkillsItem label='Github' icon='github.svg' />
+          <SkillsItem label='Figma' icon='figma.svg' />
+          <SkillsItem label='Markdown' icon='mdx.svg' />
         </div>
       </section>
       <section className='space-y-6 sm:space-y-10'>
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
           <ProjectItem
             title='Invoice App'
             image='invoices.webp'
-            description='A full stack invoice app that allows users to sign up and manage invoices. Form data is validated, and the invoice form can be partially completed and saved as a draft. This app is responsive and has light/dark theme support, and users can delete their account and data from the profile page.'
+            description='A full stack invoice app that allows users to sign up and manage invoices. Form data is validated, and the invoice form can be partially completed and saved as a draft. Data is updated with React hooks and/or Next.js API requests. This app is responsive and has light/dark theme support, and users can delete their account and data from the profile page.'
             tech='This app is built with React and Next.js, and  uses the Authentication, Firestore, and Functions features of Firebase.'
             repository='https://github.com/ivanolmo/nextjs-invoice-app'
             link='https://nextjs-invoice-app.vercel.app/'
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
           <ProjectItem
             title='Real Estate Marketplace App'
             image='marketplace.webp'
-            description='A full stack real estate marketplace that allows users to sign up and manage real estate sale and rental listings.'
+            description='A full stack real estate marketplace that allows users to sign up and manage real estate sale and rental listings. Users can sign up for an account, which allows them to manage listings and view other users’ listings.'
             tech='This app is built with React, and uses the Authentication, Firestore, and Storage features of Firebase.'
             repository='https://github.com/ivanolmo/real-estate-listing-app'
             link='https://real-estate-marketplace.netlify.app/'
