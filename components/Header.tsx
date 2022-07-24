@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+import ThemeSwitcher from './ThemeSwitcher';
+
 function Header() {
   return (
     <header className='sticky top-0 z-10 flex items-center justify-between max-w-3xl px-6 py-4 mx-auto bg-slate-200 dark:bg-slate-800'>
@@ -20,7 +22,9 @@ function Header() {
           </span>
         </a>
       </Link>
-      <div className='justify-self-end'>{/**theme switcher*/}</div>
+      <div className='justify-self-end'>
+        <ThemeSwitcher />
+      </div>
     </header>
   );
 }
