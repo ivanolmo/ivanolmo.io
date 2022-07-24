@@ -19,7 +19,7 @@ const Home: NextPage = () => {
           />
         </h1>
         <p>
-          I&apos;m a software engineer experienced in full-stack web
+          I&apos;m a software developer experienced in full-stack web
           development. I have a passion for building web applications that are
           user-friendly, accessible, and easy for other developers to read.
         </p>
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
           <ProjectItem
             title='Real Estate Marketplace App'
             image='marketplace.webp'
-            description='A full stack real estate marketplace that allows users to sign up and manage real estate sale and rental listings. Users can sign up for an account, which allows them to manage listings and view other users’ listings.'
+            description="A full stack real estate marketplace that allows users to sign up and manage real estate sale and rental listings. Users can sign up for an account, which allows them to manage listings and view other users' listings."
             tech='This app is built with React, and uses the Authentication, Firestore, and Storage features of Firebase.'
             repository='https://github.com/ivanolmo/real-estate-listing-app'
             link='https://real-estate-marketplace.netlify.app/'
