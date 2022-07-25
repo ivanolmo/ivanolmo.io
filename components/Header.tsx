@@ -12,8 +12,8 @@ function Header() {
             <Image
               src='/static/images/header-image.webp'
               alt='ivan'
-              width='48px'
-              height='48px'
+              width='64px'
+              height='64px'
               layout='responsive'
             />
           </div>
