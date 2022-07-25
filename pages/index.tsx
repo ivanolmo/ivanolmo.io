@@ -11,7 +11,7 @@ const Home: NextPage = () => {
           <Typewriter
             onInit={(typewriter) => {
               typewriter
-                .typeString('Hey there! ')
+                .typeString('Hello! ')
                 .pauseFor(750)
                 .typeString("I'm Ivan Olmo.")
                 .start();
@@ -79,9 +79,9 @@ const Home: NextPage = () => {
         <h2>Contact</h2>
         <p>
           If you&apos;d like to get in touch to discuss a project or opportunity
-          you have avaialble, please feel free to reach out to me via{' '}
+          you have available, please feel free to reach out to me via{' '}
           <a
-            href=''
+            href='mailto:mail@mail.com'
             className='text-xl font-bold border-b-2 border-blue-600 hover:text-slate-500'
           >
             email
@@ -90,6 +90,8 @@ const Home: NextPage = () => {
           <a
             href='https://linkedin.com/in/ivan-olmo'
             className='text-xl font-bold border-b-2 border-blue-600 hover:text-slate-500'
+            target='_blank'
+            rel='noreferrer'
           >
             LinkedIn
           </a>
