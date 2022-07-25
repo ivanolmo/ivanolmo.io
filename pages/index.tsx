@@ -81,7 +81,7 @@ const Home: NextPage = () => {
           If you&apos;d like to get in touch to discuss a project or opportunity
           you have available, please feel free to reach out to me via{' '}
           <a
-            href='mailto:mail@mail.com'
+            href='mailto:mail@ivanolmo.io'
             className='text-xl font-bold border-b-2 border-blue-600 hover:text-slate-500'
           >
             email

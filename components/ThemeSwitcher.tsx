@@ -42,7 +42,7 @@ function ThemeSwitcher() {
       />
       <label
         htmlFor='toggle'
-        className='relative flex w-16 h-8 bg-blue-400 border-2 border-blue-600 rounded-full theme-label'
+        className='relative flex w-16 h-8 bg-blue-400 border-2 border-blue-600 rounded-full cursor-pointer theme-label'
       >
         <span className='relative w-1.5 h-0.5 bg-white rounded-md top-3 left-10 theme-decoration'></span>
       </label>

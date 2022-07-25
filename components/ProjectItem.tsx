@@ -27,14 +27,14 @@ function ProjectItem(props: {
       <div className='grid gap-4 sm:grid-cols-2'>
         <a href={props.link} target='_blank' rel='noreferrer'>
           <Button
-            containerClasses='bg-blue-800 dark:bg-blue-400 hover:bg-blue-600 w-full col-span-1'
+            containerClasses='bg-blue-800 dark:bg-blue-600 hover:bg-blue-600 dark:hover:bg-blue-400 w-full col-span-1'
             textClasses='text-white'
             buttonText='Live Site'
           />
         </a>
         <a href={props.repository} target='_blank' rel='noreferrer'>
           <Button
-            containerClasses='bg-blue-800 dark:bg-blue-400 hover:bg-blue-600 w-full col-span-1'
+            containerClasses='bg-blue-800 dark:bg-blue-600 hover:bg-blue-600 dark:hover:bg-blue-400 w-full col-span-1'
             textClasses='text-white'
             buttonText='GitHub Repo'
           />
