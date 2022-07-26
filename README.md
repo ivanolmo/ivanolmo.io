@@ -1,34 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal portfolio site
 
-## Getting Started
+I built this to move away from my previous site that was built using a template. Practice, practice, practice, and what better way than on my own page?
 
-First, run the development server:
+The site is deployed using **Netlify** and can be viewed at ➡️ [ivanolmo.io](https://ivanolmo.io).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![portfolio-ss](https://user-images.githubusercontent.com/48425752/180934622-483cf6df-a883-4172-89cb-1b41470a2406.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How it's made
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+I built this using `React` with `TypeScript` and `Next.js`. I'm learning `TypeScript` at the moment, so although all valid `JavaScript` is also valid `TypeScript`, this site uses a bare amount of actual types. I wanted to get a little experience and deploy something simple before moving on to something where defining types would be beneficial, as I just didn't see the need to define more than a couple for this project.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+I chose to use `Next.js` because of previous experience, and because this site will almost certainly be 100% static. `Next.js` is great for serving static content, even if you're not taking advantage of any server side features. I do plan to add a page for each project so that there's space to expand on each one. A few lines of description per project isn't really enough.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+I built a nifty little sliding theme switching component using styling from [this blog post](https://h.daily-dev-tips.com/creating-day-night-css-only-toggle-switch), and I incorporated `React` state and a hook called `useTheme` (from the `next-themes` package) that made it really easy to toggle. I'm also checking `localStorage` on mount to check for a user preferred theme, and setting it if it exists.
 
-## Learn More
+I used the `typewriter-effect` package for my main headline because I've seen it here and there and I think it's cool. It's only used for 4 words, but I'm a fan of the simple effect.
 
-To learn more about Next.js, take a look at the following resources:
+## Optimizations
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+There wasn't any real need for many optimizations other than using built in Next.js features like `next/image` along with the `.webp` format for my images. I'm currently using a bunch of `SVG` icons, and I know there's a much more optimized way to use multiple `SVG`'s in a project by using sprites, and that's something I'll revisit in the next day or two.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Lessons Learned
 
-## Deploy on Vercel
+I did a semi deep-dive into SEO and all the things you can do with `<meta>` tags, so obviously I added all of them 😎 Really though, if you take a look at the `<Head>` component in the [`_app.tsx`](/pages/_app.tsx) file, you'll see all the tags I added. I'm still kind of wrapping my head around what each one provides, but I took a look at the tags on the sites of well known devs and most of the tags seem common, so I've joined their club.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thanks for reading!
