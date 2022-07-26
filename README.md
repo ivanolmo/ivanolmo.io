@@ -22,6 +22,6 @@ There wasn't any real need for many optimizations other than using built in Next
 
 ## Lessons Learned
 
-I did a semi deep-dive into SEO and all the things you can do with `<meta>` tags, so obviously I added all of them 😎 Really though, if you take a look at the `<Head>` component in the [`_app.tsx`](/pages/_app.tsx) file, you'll see all the tags I added. I'm still kind of wrapping my head around what each one provides, but I took a look at the tags on the sites of well known devs and most of the tags seem common, so I've joined their club.
+I did a semi deep-dive into SEO and all the things you can do with `<meta>` tags, so obviously I added all of them 😎 Really though, if you take a look at the [`<Meta>`](/components/Meta.tsx) component in the [`_app.tsx`](/pages/_app.tsx) file, you'll see all the tags I added. The `<Meta>` component wraps the `<Head>` component provided by `next`, and that's where you can add anything `<meta>` related. I'm still kind of wrapping my head around what each one provides, but I took a look at the tags on the sites of well known devs and most of the tags seem common, so I've joined their club.
 
 Thanks for reading!
