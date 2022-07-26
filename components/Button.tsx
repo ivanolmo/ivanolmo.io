@@ -1,4 +1,4 @@
-export default function Button(props: {
+function Button(props: {
   onClick?: () => void;
   containerClasses: string;
   textClasses: string;
@@ -18,3 +18,5 @@ export default function Button(props: {
     </button>
   );
 }
+
+export default Button;
