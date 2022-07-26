@@ -1,10 +1,11 @@
-/** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   darkMode: 'class',
   theme: {
     fontFamily: {
-      roboto: ['Roboto', 'sans-serif'],
+      sans: ['Noto Sans', ...fontFamily.sans],
     },
   },
 };

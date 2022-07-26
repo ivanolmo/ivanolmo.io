@@ -4,19 +4,15 @@ function Document() {
   return (
     <Html lang='en'>
       <Head>
+        <link rel='preconnect' href='https://fonts.googleapis.com' />
         <link
-          rel='preload'
-          href='/fonts/roboto-bold.woff2'
-          as='font'
-          type='font/woff2'
-          crossOrigin='anonymous'
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='true'
         />
         <link
-          rel='preload'
-          href='/fonts/roboto-regular.woff2'
-          as='font'
-          type='font/woff2'
-          crossOrigin='anonymous'
+          href='https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap'
+          rel='stylesheet'
         />
         <link href='/static/favicons/site.webmanifest' rel='manifest' />
         <link href='/static/favicons/favicon.ico' rel='shortcut icon' />
