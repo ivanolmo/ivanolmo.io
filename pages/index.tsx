@@ -14,6 +14,9 @@ const Home: NextPage = () => {
                 .typeString('Hello! ')
                 .pauseFor(750)
                 .typeString("I'm Ivan Olmo.")
+                .pauseFor(750)
+                .deleteAll()
+                .typeString("I'm a Full Stack Developer.")
                 .start();
             }}
           />
@@ -25,8 +28,8 @@ const Home: NextPage = () => {
         </p>
         <p>
           I&apos;m currently focused on building fast, responsive, full-stack
-          web apps with React, Next.js, and Firebase or MongoDB. I love to learn
-          and am currently on a deep dive into TypeScript and Jamstack.
+          web apps with React and TypeScript, Next.js, and Firebase, MongoDB, or
+          PostgreSQL. I love to learn and am currently learning about Golang.
         </p>
       </section>
       <section className='space-y-6 sm:space-y-10'>
@@ -47,7 +50,7 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className='space-y-6 sm:space-y-10'>
-        <h2>Projects</h2>
+        <h2>Completed Projects</h2>
         <div className='grid gap-8 sm:gap-12'>
           <ProjectItem
             title='Invoice App'
@@ -79,7 +82,7 @@ const Home: NextPage = () => {
         <h2>Contact</h2>
         <p>
           If you&apos;d like to get in touch to discuss a project or opportunity
-          you have available, please feel free to reach out to me via{' '}
+          you have available, please reach out to me via{' '}
           <a
             href='mailto:ivan@ivanolmo.io'
             className='text-xl font-bold border-b-2 border-blue-600 hover:text-slate-500'
