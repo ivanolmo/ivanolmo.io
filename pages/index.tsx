@@ -62,6 +62,23 @@ const Home: NextPage = () => {
         </div>
       </section>
       <section className='space-y-6 sm:space-y-10'>
+        <h2>Skills</h2>
+        <div className='grid grid-cols-3 sm:grid-cols-4 gap-y-6'>
+          <SkillsItem label='React' icon='react.svg' />
+          <SkillsItem label='Next.js' icon='nextjs.svg' />
+          <SkillsItem label='JavaScript' icon='javascript.svg' />
+          <SkillsItem label='TypeScript' icon='typescript.svg' />
+          <SkillsItem label='Node.js' icon='nodejs.svg' />
+          <SkillsItem label='Firebase' icon='firebase.svg' />
+          <SkillsItem label='MongoDB' icon='mongodb.svg' />
+          <SkillsItem label='Tailwind' icon='tailwind.svg' />
+          <SkillsItem label='VSCode' icon='vscode.svg' />
+          <SkillsItem label='Github' icon='github.svg' />
+          <SkillsItem label='Figma' icon='figma.svg' />
+          <SkillsItem label='Markdown' icon='mdx.svg' />
+        </div>
+      </section>
+      <section className='space-y-6 sm:space-y-10'>
         <h2>Contact</h2>
         <p>
           If you&apos;d like to get in touch to discuss a project or opportunity
@@ -84,23 +101,6 @@ const Home: NextPage = () => {
           .
         </p>
       </section>
-      <section className='space-y-6 sm:space-y-10'>
-      <h2>Skills</h2>
-      <div className='grid grid-cols-3 sm:grid-cols-4 gap-y-6'>
-        <SkillsItem label='React' icon='react.svg' />
-        <SkillsItem label='Next.js' icon='nextjs.svg' />
-        <SkillsItem label='JavaScript' icon='javascript.svg' />
-        <SkillsItem label='TypeScript' icon='typescript.svg' />
-        <SkillsItem label='Node.js' icon='nodejs.svg' />
-        <SkillsItem label='Firebase' icon='firebase.svg' />
-        <SkillsItem label='MongoDB' icon='mongodb.svg' />
-        <SkillsItem label='Tailwind' icon='tailwind.svg' />
-        <SkillsItem label='VSCode' icon='vscode.svg' />
-        <SkillsItem label='Github' icon='github.svg' />
-        <SkillsItem label='Figma' icon='figma.svg' />
-        <SkillsItem label='Markdown' icon='mdx.svg' />
-      </div>
-    </section>
     </main>
   );
 };
