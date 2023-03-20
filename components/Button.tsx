@@ -1,9 +1,11 @@
-function Button(props: {
+interface ButtonProps {
   onClick?: () => void;
   containerClasses: string;
   textClasses: string;
   buttonText: string;
-}) {
+}
+
+function Button(props: ButtonProps) {
   return (
     <button
       type='button'

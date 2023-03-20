@@ -1,10 +1,12 @@
 import Image from 'next/image';
 
-function SkillsItem(props: {
+interface SkillsItemProps {
   label: string;
   icon: string;
   className?: string;
-}) {
+}
+
+function SkillsItem(props: SkillsItemProps) {
   return (
     <div className={`flex flex-col items-center gap-2 ${props.className}`}>
       <div className='w-16 h-16 sm:w-24 sm:h-24'>
