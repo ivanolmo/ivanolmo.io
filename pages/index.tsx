@@ -72,10 +72,6 @@ const Home: NextPage = () => {
           <SkillsItem label='Firebase' icon='firebase.svg' />
           <SkillsItem label='MongoDB' icon='mongodb.svg' />
           <SkillsItem label='Tailwind' icon='tailwind.svg' />
-          <SkillsItem label='VSCode' icon='vscode.svg' />
-          <SkillsItem label='Github' icon='github.svg' />
-          <SkillsItem label='Figma' icon='figma.svg' />
-          <SkillsItem label='Markdown' icon='mdx.svg' />
         </div>
       </section>
       <section className='space-y-6 sm:space-y-10'>
