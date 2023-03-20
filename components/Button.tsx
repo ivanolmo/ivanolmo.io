@@ -8,7 +8,7 @@ function Button(props: {
     <button
       type='button'
       onClick={() => props.onClick?.()}
-      className={`flex justify-center items-center py-4 px-6 rounded-full cursor-pointer ${props.containerClasses}`}
+      className={`flex justify-center items-center py-4 px-6 rounded-xl cursor-pointer ${props.containerClasses}`}
     >
       <div
         className={`flex justify-center items-center text-xl font-bold tracking-wide ${props.textClasses}`}
