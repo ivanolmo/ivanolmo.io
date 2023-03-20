@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
 import Typewriter from 'typewriter-effect';
+
 import SkillsItem from '../components/SkillsItem';
 import ProjectItem from '../components/ProjectItem';
+import { projectData } from '../data/projectData';
 
 const Home: NextPage = () => {
   return (
@@ -35,30 +37,17 @@ const Home: NextPage = () => {
       <section className='space-y-6 sm:space-y-10'>
         <h2>Completed Projects</h2>
         <div className='grid gap-8 sm:gap-12'>
-          <ProjectItem
-            title='Invoice App'
-            image='invoices.webp'
-            description='A full stack invoice app that allows users to sign up and manage invoices. Form data is validated, and the invoice form can be partially completed and saved as a draft. Data is updated with React hooks and/or Next.js API requests. This app is responsive and has light/dark theme support, and users can delete their account and data from the profile page.'
-            tech='This app is built with React and Next.js, and  uses the Authentication, Firestore, and Functions features of Firebase.'
-            repository='https://github.com/ivanolmo/nextjs-invoice-app'
-            link='https://nextjs-invoice-app.vercel.app/'
-          />
-          <ProjectItem
-            title='Real Estate Marketplace App'
-            image='marketplace.webp'
-            description="A full stack real estate marketplace that allows users to sign up and manage real estate sale and rental listings. Users can sign up for an account, which allows them to manage listings and view other users' listings."
-            tech='This app is built with React, and uses the Authentication, Firestore, and Storage features of Firebase.'
-            repository='https://github.com/ivanolmo/real-estate-listing-app'
-            link='https://real-estate-marketplace.netlify.app/'
-          />
-          <ProjectItem
-            title='Support Ticket App'
-            image='support.webp'
-            description='A full stack support ticket system that allows users to sign up and manage tickets for a variety of devices. Users can see ticket status, add notes to tickets, and mark tickets as closed.'
-            tech='This app is built with the MERN stack, using React, Node.js, Express.js, and MongoDB, as well as the Redux Toolkit.'
-            repository='https://github.com/ivanolmo/support-ticket-app'
-            link='https://supportdeskmern.herokuapp.com/'
-          />
+          {projectData.map((project) => (
+            <ProjectItem
+              key={project!.title}
+              title={project!.title}
+              image={project!.image}
+              description={project!.description}
+              tech={project!.tech}
+              repoLink={project!.repoLink}
+              liveLink={project!.liveLink}
+            />
+          ))}
         </div>
       </section>
       <section className='space-y-6 sm:space-y-10'>
