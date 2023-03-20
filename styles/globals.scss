@@ -26,8 +26,12 @@
     @apply text-xl sm:text-2xl font-bold;
   }
 
+  h4 {
+    @apply text-lg sm:text-xl font-bold;
+  }
+
   p {
-    @apply text-xl sm:text-2xl;
+    @apply text-xl;
   }
 }
 
