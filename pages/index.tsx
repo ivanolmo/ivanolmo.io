@@ -84,7 +84,7 @@ const Home: NextPage = () => {
           ))}
         </div>
       </section>
-      <section className='space-y-6 sm:space-y-10'>
+{/*       <section className='space-y-6 sm:space-y-10'>
         <h2>Skills</h2>
         <div className='grid grid-cols-3 sm:grid-cols-4 gap-y-6'>
           <SkillsItem label='React' icon='react.svg' />
@@ -96,7 +96,7 @@ const Home: NextPage = () => {
           <SkillsItem label='MongoDB' icon='mongodb.svg' />
           <SkillsItem label='Tailwind' icon='tailwind.svg' />
         </div>
-      </section>
+      </section> */}
       <section className='space-y-6 sm:space-y-10'>
         <h2>Contact</h2>
         <p>
