@@ -3,10 +3,10 @@ export const projectData = [
     title: 'Kanban Task Manager',
     image: 'kanban.webp',
     description:
-      'I built this full stack app to have a task manager that I could use to organize my work. It is a Kanban board that allows users to create, edit, and delete tasks. Users can create different boards, and each board can have any number of columns. Tasks can have subtasks as well. The app is responsive and supports both light and dark themes.',
-    tech: 'React, Next.js, TypeScript, tRPC, React Query, Zustand, NextAuth, MongoDB, Tailwind.',
-    repoLink: 'https://github.com/ivanolmo/kanban-task-management',
-    liveLink: 'https://nextjs-kanban.vercel.app/',
+      'This full stack app allows users to manage tasks from anywhere. It is a Kanban task manager that allows users to create, edit, and delete boards, tasks, and subtasks. The app is responsive, supports light and dark themes, and is dockerized and deployed to AWS.',
+    tech: 'React, Next.js, TypeScript, Redux, RTK-Query, Java, Spring Boot (Web, Data, & Security), PostgreSQL, Docker, AWS.',
+    repoLink: 'https://github.com/ivanolmo/kanban-spring-backend',
+    liveLink: 'https://kanban.ivanolmo.com/',
   },
   {
     title: 'Invoice App',
